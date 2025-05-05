@@ -1,0 +1,598 @@
+2025-05-04 18:45:36,151 - DEBUG - Calling on_part_begin with no data
+2025-05-04 18:45:36,163 - DEBUG - Calling on_header_field with data[54:73]
+2025-05-04 18:45:36,172 - DEBUG - Calling on_header_value with data[75:139]
+2025-05-04 18:45:36,187 - DEBUG - Calling on_header_end with no data
+2025-05-04 18:45:36,218 - DEBUG - Calling on_header_field with data[141:153]
+2025-05-04 18:45:36,256 - DEBUG - Calling on_header_value with data[155:170]
+2025-05-04 18:45:36,294 - DEBUG - Calling on_header_end with no data
+2025-05-04 18:45:36,325 - DEBUG - Calling on_headers_finished with no data
+2025-05-04 18:45:36,347 - DEBUG - Calling on_part_data with data[174:151094]
+2025-05-04 18:45:36,371 - DEBUG - Calling on_part_end with no data
+2025-05-04 18:45:36,378 - DEBUG - Calling on_end with no data
+2025-05-04 18:45:36,463 - INFO - Upload requested: project_id=2, filename=University_Knowledge_Base.pdf
+2025-05-04 18:45:36,470 - INFO - File saved: G:\Git Projects\new-University-AI-Assistant\assets\Files\2\nRRyjTCKYrbl_University_Knowledge_Base.pdf
+2025-05-04 18:46:23,321 - INFO - Process requested: project_id=2, as_chunks=False
+2025-05-04 18:46:23,330 - ERROR - Processing error: 'ProcessingController' object has no attribute 'settings'
+Traceback:
+Traceback (most recent call last):
+  File "G:\Git Projects\new-University-AI-Assistant\src\routes\data.py", line 95, in process_project_documents
+    df = doc_ctrl.process_files_to_dataframe(project_id=project_id)
+  File "G:\Git Projects\new-University-AI-Assistant\src\controllers\ProcessingController.py", line 40, in process_files_to_dataframe
+    paths = self._resolve_files(file_paths, project_id)
+  File "G:\Git Projects\new-University-AI-Assistant\src\controllers\ProcessingController.py", line 66, in _resolve_files
+    allowed = set(ext.lstrip('.') for ext in self.settings.FILE_ALLOWED_TYPES)
+AttributeError: 'ProcessingController' object has no attribute 'settings'
+
+2025-05-04 18:47:33,485 - INFO - Process requested: project_id=2, as_chunks=False
+2025-05-04 18:47:33,489 - ERROR - No files to process
+2025-05-04 18:47:33,565 - DEBUG - No chunks for project_id=2
+2025-05-04 18:54:42,480 - INFO - Process requested: project_id=2, as_chunks=False
+2025-05-04 18:54:42,481 - INFO - project folder:G:\Git Projects\new-University-AI-Assistant\assets\Files\2
+2025-05-04 18:54:42,484 - ERROR - No files to process
+2025-05-04 18:54:42,486 - DEBUG - No chunks for project_id=2
+2025-05-04 18:56:27,724 - INFO - Process requested: project_id=2, as_chunks=False
+2025-05-04 18:56:27,724 - INFO - project folder:G:\Git Projects\new-University-AI-Assistant\assets\Files\2
+2025-05-04 18:56:27,727 - ERROR - Error processing G:\Git Projects\new-University-AI-Assistant\assets\Files\2: Unsupported type: 
+Traceback:
+Traceback (most recent call last):
+  File "G:\Git Projects\new-University-AI-Assistant\src\controllers\ProcessingController.py", line 48, in process_files_to_dataframe
+    docs = self._load_and_split(path)
+  File "G:\Git Projects\new-University-AI-Assistant\src\controllers\ProcessingController.py", line 78, in _load_and_split
+    raise ValueError(f"Unsupported type: {ext}")
+ValueError: Unsupported type: 
+
+2025-05-04 18:56:27,803 - INFO - Created DataFrame with 0 rows
+2025-05-04 18:56:27,804 - DEBUG - No chunks for project_id=2
+2025-05-04 19:02:17,860 - INFO - Process requested: project_id=2, as_chunks=False
+2025-05-04 19:02:17,861 - INFO - project folder:G:\Git Projects\new-University-AI-Assistant\assets\Files\2
+2025-05-04 19:02:17,862 - ERROR - Error processing G:\Git Projects\new-University-AI-Assistant\assets\Files\2: Unsupported type: 
+Traceback:
+Traceback (most recent call last):
+  File "G:\Git Projects\new-University-AI-Assistant\src\controllers\ProcessingController.py", line 48, in process_files_to_dataframe
+    docs = self._load_and_split(path)
+  File "G:\Git Projects\new-University-AI-Assistant\src\controllers\ProcessingController.py", line 100, in _load_and_split
+    raise ValueError(f"Unsupported type: {ext}")
+ValueError: Unsupported type: 
+
+2025-05-04 19:02:17,866 - INFO - Created DataFrame with 0 rows
+2025-05-04 19:02:17,866 - DEBUG - No chunks for project_id=2
+2025-05-04 19:02:41,786 - INFO - Process requested: project_id=2, as_chunks=False
+2025-05-04 19:02:41,787 - INFO - project folder:G:\Git Projects\new-University-AI-Assistant\assets\Files\2
+2025-05-04 19:02:41,789 - ERROR - Error processing G:\Git Projects\new-University-AI-Assistant\assets\Files\2: Unsupported type: 
+Traceback:
+Traceback (most recent call last):
+  File "G:\Git Projects\new-University-AI-Assistant\src\controllers\ProcessingController.py", line 48, in process_files_to_dataframe
+    docs = self._load_and_split(path)
+  File "G:\Git Projects\new-University-AI-Assistant\src\controllers\ProcessingController.py", line 100, in _load_and_split
+    raise ValueError(f"Unsupported type: {ext}")
+ValueError: Unsupported type: 
+
+2025-05-04 19:02:41,791 - INFO - Created DataFrame with 0 rows
+2025-05-04 19:02:41,791 - DEBUG - No chunks for project_id=2
+2025-05-04 19:03:51,803 - INFO - Process requested: project_id=2, as_chunks=False
+2025-05-04 19:03:51,803 - INFO - project folder:G:\Git Projects\new-University-AI-Assistant\assets\Files\2
+2025-05-04 19:03:51,805 - ERROR - Processing error: 'ProcessingController' object has no attribute '_resolve_files'
+Traceback:
+Traceback (most recent call last):
+  File "G:\Git Projects\new-University-AI-Assistant\src\routes\data.py", line 96, in process_project_documents
+    df = doc_ctrl.process_files_to_dataframe(file_paths=project_path,project_id=project_id)
+  File "G:\Git Projects\new-University-AI-Assistant\src\controllers\ProcessingController.py", line 40, in process_files_to_dataframe
+    paths = self._resolve_files(file_paths, project_id)
+AttributeError: 'ProcessingController' object has no attribute '_resolve_files'
+
+2025-05-04 19:08:17,688 - INFO - Process requested: project_id=2, as_chunks=False
+2025-05-04 19:08:17,689 - INFO - project folder:G:\Git Projects\new-University-AI-Assistant\assets\Files\2
+2025-05-04 19:08:17,693 - ERROR - Processing error: 'ProcessingController' object has no attribute '_resolve_files'
+Traceback:
+Traceback (most recent call last):
+  File "G:\Git Projects\new-University-AI-Assistant\src\routes\data.py", line 96, in process_project_documents
+    df = doc_ctrl.process_files_to_dataframe(file_paths=project_path,project_id=project_id)
+  File "G:\Git Projects\new-University-AI-Assistant\src\controllers\ProcessingController.py", line 40, in process_files_to_dataframe
+    paths = self._resolve_files(file_paths, project_id)
+AttributeError: 'ProcessingController' object has no attribute '_resolve_files'
+
+2025-05-04 19:08:26,740 - INFO - Process requested: project_id=2, as_chunks=False
+2025-05-04 19:08:26,741 - INFO - project folder:G:\Git Projects\new-University-AI-Assistant\assets\Files\2
+2025-05-04 19:08:26,742 - ERROR - Error processing G:\Git Projects\new-University-AI-Assistant\assets\Files\2: Unsupported type: 
+Traceback:
+Traceback (most recent call last):
+  File "G:\Git Projects\new-University-AI-Assistant\src\controllers\ProcessingController.py", line 48, in process_files_to_dataframe
+    docs = self._load_and_split(path)
+  File "G:\Git Projects\new-University-AI-Assistant\src\controllers\ProcessingController.py", line 100, in _load_and_split
+    raise ValueError(f"Unsupported type: {ext}")
+ValueError: Unsupported type: 
+
+2025-05-04 19:08:26,744 - INFO - Created DataFrame with 0 rows
+2025-05-04 19:08:26,745 - DEBUG - No chunks for project_id=2
+2025-05-04 19:10:42,227 - INFO - Process requested: project_id=2, as_chunks=False
+2025-05-04 19:10:42,227 - INFO - project folder:G:\Git Projects\new-University-AI-Assistant\assets\Files\2
+2025-05-04 19:10:42,252 - ERROR - Error processing G:\Git Projects\new-University-AI-Assistant\assets\Files\2\nRRyjTCKYrbl_University_Knowledge_Base.pdf: pypdf package not found, please install it with `pip install pypdf`
+Traceback:
+Traceback (most recent call last):
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\langchain_community\document_loaders\pdf.py", line 236, in __init__
+    import pypdf  # noqa:F401
+ModuleNotFoundError: No module named 'pypdf'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\Git Projects\new-University-AI-Assistant\src\controllers\ProcessingController.py", line 48, in process_files_to_dataframe
+    docs = self._load_and_split(path)
+  File "G:\Git Projects\new-University-AI-Assistant\src\controllers\ProcessingController.py", line 96, in _load_and_split
+    loader = PyPDFLoader(file_path)
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\langchain_community\document_loaders\pdf.py", line 238, in __init__
+    raise ImportError(
+ImportError: pypdf package not found, please install it with `pip install pypdf`
+
+2025-05-04 19:10:42,262 - ERROR - Error processing G:\Git Projects\new-University-AI-Assistant\assets\Files\2\rDulyI8tJPDX_University_Knowledge_Base.pdf: pypdf package not found, please install it with `pip install pypdf`
+Traceback:
+Traceback (most recent call last):
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\langchain_community\document_loaders\pdf.py", line 236, in __init__
+    import pypdf  # noqa:F401
+ModuleNotFoundError: No module named 'pypdf'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\Git Projects\new-University-AI-Assistant\src\controllers\ProcessingController.py", line 48, in process_files_to_dataframe
+    docs = self._load_and_split(path)
+  File "G:\Git Projects\new-University-AI-Assistant\src\controllers\ProcessingController.py", line 96, in _load_and_split
+    loader = PyPDFLoader(file_path)
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\langchain_community\document_loaders\pdf.py", line 238, in __init__
+    raise ImportError(
+ImportError: pypdf package not found, please install it with `pip install pypdf`
+
+2025-05-04 19:10:42,265 - INFO - Created DataFrame with 0 rows
+2025-05-04 19:10:42,266 - DEBUG - No chunks for project_id=2
+2025-05-04 19:16:01,958 - INFO - Process requested: project_id=2, as_chunks=False
+2025-05-04 19:16:01,959 - INFO - project folder:G:\Git Projects\new-University-AI-Assistant\assets\Files\2
+2025-05-04 19:16:03,558 - INFO - Split into 17 chunks: G:\Git Projects\new-University-AI-Assistant\assets\Files\2\nRRyjTCKYrbl_University_Knowledge_Base.pdf
+2025-05-04 19:16:03,987 - INFO - Split into 17 chunks: G:\Git Projects\new-University-AI-Assistant\assets\Files\2\rDulyI8tJPDX_University_Knowledge_Base.pdf
+2025-05-04 19:16:04,040 - INFO - Created DataFrame with 34 rows
+2025-05-04 19:16:04,114 - INFO - Returning 34 chunk records
+2025-05-04 20:02:50,199 - INFO - Process requested: project_id=2, as_chunks=False
+2025-05-04 20:02:50,200 - INFO - project folder:G:\Git Projects\new-University-AI-Assistant\assets\Files\2
+2025-05-04 20:02:51,285 - INFO - Split into 17 chunks: G:\Git Projects\new-University-AI-Assistant\assets\Files\2\nRRyjTCKYrbl_University_Knowledge_Base.pdf
+2025-05-04 20:02:51,634 - INFO - Split into 17 chunks: G:\Git Projects\new-University-AI-Assistant\assets\Files\2\rDulyI8tJPDX_University_Knowledge_Base.pdf
+2025-05-04 20:02:51,636 - INFO - Created DataFrame with 34 rows
+2025-05-04 20:02:51,697 - INFO - Returning 34 chunk records
+2025-05-05 00:58:35,247 - INFO - Process requested: project_id=2, as_chunks=False
+2025-05-05 00:58:35,260 - INFO - project folder:G:\Git Projects\new-University-AI-Assistant\assets\Files\2
+2025-05-05 00:58:37,778 - DEBUG - Starting new HTTP connection (1): localhost:11434
+2025-05-05 00:58:42,494 - ERROR - Error processing G:\Git Projects\new-University-AI-Assistant\assets\Files\2\nRRyjTCKYrbl_University_Knowledge_Base.pdf: Error raised by inference endpoint: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/embeddings (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000195F62B3160>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+Traceback:
+Traceback (most recent call last):
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\urllib3\connectionpool.py", line 495, in _make_request
+    conn.request(
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\urllib3\connection.py", line 441, in request
+    self.endheaders()
+  File "G:\anaconda\envs\venv\lib\http\client.py", line 1251, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "G:\anaconda\envs\venv\lib\http\client.py", line 1011, in _send_output
+    self.send(msg)
+  File "G:\anaconda\envs\venv\lib\http\client.py", line 951, in send
+    self.connect()
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\urllib3\connection.py", line 279, in connect
+    self.sock = self._new_conn()
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\urllib3\connection.py", line 214, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x00000195F62B3160>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/embeddings (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000195F62B3160>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\langchain_community\embeddings\ollama.py", line 162, in _process_emb_response
+    res = requests.post(
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/embeddings (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000195F62B3160>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\Git Projects\new-University-AI-Assistant\src\controllers\ProcessingController.py", line 47, in process_files_to_dataframe
+    self.embedding_service.embed_and_store(docs)  # Use instance variable
+  File "G:\Git Projects\new-University-AI-Assistant\src\services\Embedding.py", line 44, in embed_and_store
+    raise e
+  File "G:\Git Projects\new-University-AI-Assistant\src\services\Embedding.py", line 32, in embed_and_store
+    embedding = self.embedder.embed_documents([chunk.page_content])[0]
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\langchain_community\embeddings\ollama.py", line 209, in embed_documents
+    embeddings = self._embed(instruction_pairs)
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\langchain_community\embeddings\ollama.py", line 197, in _embed
+    return [self._process_emb_response(prompt) for prompt in iter_]
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\langchain_community\embeddings\ollama.py", line 197, in <listcomp>
+    return [self._process_emb_response(prompt) for prompt in iter_]
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\langchain_community\embeddings\ollama.py", line 168, in _process_emb_response
+    raise ValueError(f"Error raised by inference endpoint: {e}")
+ValueError: Error raised by inference endpoint: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/embeddings (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000195F62B3160>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+2025-05-05 00:58:42,767 - INFO - Created DataFrame with 17 rows
+2025-05-05 00:58:42,858 - INFO - Returning 17 chunk records
+2025-05-05 00:59:20,109 - INFO - Process requested: project_id=2, as_chunks=False
+2025-05-05 00:59:20,110 - INFO - project folder:G:\Git Projects\new-University-AI-Assistant\assets\Files\2
+2025-05-05 00:59:21,214 - DEBUG - Starting new HTTP connection (1): localhost:11434
+2025-05-05 00:59:25,306 - ERROR - Error processing G:\Git Projects\new-University-AI-Assistant\assets\Files\2\nRRyjTCKYrbl_University_Knowledge_Base.pdf: Error raised by inference endpoint: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/embeddings (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015F0B7141F0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+Traceback:
+Traceback (most recent call last):
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\urllib3\connectionpool.py", line 495, in _make_request
+    conn.request(
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\urllib3\connection.py", line 441, in request
+    self.endheaders()
+  File "G:\anaconda\envs\venv\lib\http\client.py", line 1251, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "G:\anaconda\envs\venv\lib\http\client.py", line 1011, in _send_output
+    self.send(msg)
+  File "G:\anaconda\envs\venv\lib\http\client.py", line 951, in send
+    self.connect()
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\urllib3\connection.py", line 279, in connect
+    self.sock = self._new_conn()
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\urllib3\connection.py", line 214, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000015F0B7141F0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/embeddings (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015F0B7141F0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\langchain_community\embeddings\ollama.py", line 162, in _process_emb_response
+    res = requests.post(
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/embeddings (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015F0B7141F0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\Git Projects\new-University-AI-Assistant\src\controllers\ProcessingController.py", line 47, in process_files_to_dataframe
+    self.embedding_service.embed_and_store(docs)  # Use instance variable
+  File "G:\Git Projects\new-University-AI-Assistant\src\services\Embedding.py", line 44, in embed_and_store
+    raise e
+  File "G:\Git Projects\new-University-AI-Assistant\src\services\Embedding.py", line 32, in embed_and_store
+    embedding = self.embedder.embed_documents([chunk.page_content])[0]
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\langchain_community\embeddings\ollama.py", line 209, in embed_documents
+    embeddings = self._embed(instruction_pairs)
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\langchain_community\embeddings\ollama.py", line 197, in _embed
+    return [self._process_emb_response(prompt) for prompt in iter_]
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\langchain_community\embeddings\ollama.py", line 197, in <listcomp>
+    return [self._process_emb_response(prompt) for prompt in iter_]
+  File "G:\Git Projects\new-University-AI-Assistant\venv\lib\site-packages\langchain_community\embeddings\ollama.py", line 168, in _process_emb_response
+    raise ValueError(f"Error raised by inference endpoint: {e}")
+ValueError: Error raised by inference endpoint: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/embeddings (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015F0B7141F0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+2025-05-05 00:59:25,346 - INFO - Created DataFrame with 17 rows
+2025-05-05 00:59:25,349 - INFO - Returning 17 chunk records
+2025-05-05 01:08:01,820 - INFO - Use pytorch device_name: cpu
+2025-05-05 01:08:01,821 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-05 01:08:01,825 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-05 01:08:03,628 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:08:03,647 - DEBUG - Attempting to acquire lock 2920693641168 on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\952a9b81c0bfd99800fabf352f69c7ccd46c5e43.lock
+2025-05-05 01:08:03,648 - DEBUG - Lock 2920693641168 acquired on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\952a9b81c0bfd99800fabf352f69c7ccd46c5e43.lock
+2025-05-05 01:08:03,871 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 349
+2025-05-05 01:08:04,572 - DEBUG - Attempting to release lock 2920693641168 on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\952a9b81c0bfd99800fabf352f69c7ccd46c5e43.lock
+2025-05-05 01:08:04,573 - DEBUG - Lock 2920693641168 released on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\952a9b81c0bfd99800fabf352f69c7ccd46c5e43.lock
+2025-05-05 01:08:04,787 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/11" 200 0
+2025-05-05 01:08:04,803 - DEBUG - Attempting to acquire lock 2920693795568 on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\fd1b291129c607e5d49799f87cb219b27f98acdf.lock
+2025-05-05 01:08:04,804 - DEBUG - Lock 2920693795568 acquired on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\fd1b291129c607e5d49799f87cb219b27f98acdf.lock
+2025-05-05 01:08:05,005 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/11" 200 116
+2025-05-05 01:08:05,017 - DEBUG - Attempting to release lock 2920693795568 on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\fd1b291129c607e5d49799f87cb219b27f98acdf.lock
+2025-05-05 01:08:05,019 - DEBUG - Lock 2920693795568 released on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\fd1b291129c607e5d49799f87cb219b27f98acdf.lock
+2025-05-05 01:08:05,233 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/11" 200 0
+2025-05-05 01:08:05,236 - DEBUG - Attempting to acquire lock 2920693795616 on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\58d4a9a45664eb9e12de9549c548c09b6134c17f.lock
+2025-05-05 01:08:05,237 - DEBUG - Lock 2920693795616 acquired on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\58d4a9a45664eb9e12de9549c548c09b6134c17f.lock
+2025-05-05 01:08:05,451 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/11" 200 10454
+2025-05-05 01:08:05,464 - DEBUG - Attempting to release lock 2920693795616 on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\58d4a9a45664eb9e12de9549c548c09b6134c17f.lock
+2025-05-05 01:08:05,472 - DEBUG - Lock 2920693795616 released on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\58d4a9a45664eb9e12de9549c548c09b6134c17f.lock
+2025-05-05 01:08:05,732 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:08:05,971 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/11" 200 0
+2025-05-05 01:08:05,974 - DEBUG - Attempting to acquire lock 2920693796192 on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\59d594003bf59880a884c574bf88ef7555bb0202.lock
+2025-05-05 01:08:05,975 - DEBUG - Lock 2920693796192 acquired on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\59d594003bf59880a884c574bf88ef7555bb0202.lock
+2025-05-05 01:08:06,191 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/11" 200 53
+2025-05-05 01:08:06,204 - DEBUG - Attempting to release lock 2920693796192 on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\59d594003bf59880a884c574bf88ef7555bb0202.lock
+2025-05-05 01:08:06,208 - DEBUG - Lock 2920693796192 released on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\59d594003bf59880a884c574bf88ef7555bb0202.lock
+2025-05-05 01:08:06,428 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/11" 200 0
+2025-05-05 01:08:06,431 - DEBUG - Attempting to acquire lock 2920693795520 on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\72b987fd805cfa2b58c4c8c952b274a11bfd5a00.lock
+2025-05-05 01:08:06,433 - DEBUG - Lock 2920693795520 acquired on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\72b987fd805cfa2b58c4c8c952b274a11bfd5a00.lock
+2025-05-05 01:08:06,641 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/11" 200 612
+2025-05-05 01:08:06,653 - DEBUG - Attempting to release lock 2920693795520 on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\72b987fd805cfa2b58c4c8c952b274a11bfd5a00.lock
+2025-05-05 01:08:06,655 - DEBUG - Lock 2920693795520 released on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\72b987fd805cfa2b58c4c8c952b274a11bfd5a00.lock
+2025-05-05 01:08:07,786 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/model.safetensors HTTP/11" 302 0
+2025-05-05 01:08:07,793 - DEBUG - Attempting to acquire lock 2920697230672 on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db.lock
+2025-05-05 01:08:07,794 - DEBUG - Lock 2920697230672 acquired on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db.lock
+2025-05-05 01:08:07,798 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-05 01:08:08,008 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/model.safetensors HTTP/11" 302 1323
+2025-05-05 01:08:08,013 - DEBUG - Starting new HTTPS connection (1): cas-bridge.xethub.hf.co:443
+2025-05-05 01:08:08,396 - DEBUG - https://cas-bridge.xethub.hf.co:443 "GET /xet-bridge-us/621ffdc136468d709f180294/789fdf16a3e59f4fbfb6002967ecee539a198dadb5be74ca549aa7dc9b1b55fb?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cas%2F20250504%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250504T215058Z&X-Amz-Expires=3600&X-Amz-Signature=ac290ce1d07789a9ee7677f93ceafbe4d5f601f1c7d934c431edbba39e1683ab&X-Amz-SignedHeaders=host&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&x-id=GetObject&Expires=1746399058&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0NjM5OTA1OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2FzLWJyaWRnZS54ZXRodWIuaGYuY28veGV0LWJyaWRnZS11cy82MjFmZmRjMTM2NDY4ZDcwOWYxODAyOTQvNzg5ZmRmMTZhM2U1OWY0ZmJmYjYwMDI5NjdlY2VlNTM5YTE5OGRhZGI1YmU3NGNhNTQ5YWE3ZGM5YjFiNTVmYioifV19&Signature=BzeEaf7TTFGIZbVMGFidUwjMJgQMrffz9JK1rHWUg3cey3uJEYCULBsOnu-27fewWQAfl4GGAVF-hAboL-P0~DlgjuBbh7yq2PCtccXtSniJ~ZqNwybGzrJUjUmyCIWubUskgy4TEDduAi6Q80XNq~lkEfsWl~uKoJvZP6qu-pdYr6gYwEj3jm83GBCc3lZQ~eT9WzRplWdAE-vNps72F9XpmqZ-bah3kSRai03~B6YNlTT61KhZtC6cYKuqTfuVZGNOKZ0sqPGoroWLnMu1ZoMpjUj940cma3EeeEwzvvP6qeUFiomIH6SQbsV-7UHxOY85LuySKZeAo9QVv-pjhw__&Key-Pair-Id=K2L8F4GPSG1IFC HTTP/11" 200 90868376
+2025-05-05 01:13:21,343 - DEBUG - Attempting to release lock 2920697230672 on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db.lock
+2025-05-05 01:13:21,345 - DEBUG - Lock 2920697230672 released on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db.lock
+2025-05-05 01:13:22,665 - DEBUG - Resetting dropped connection: huggingface.co
+2025-05-05 01:13:23,388 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2025-05-05 01:13:23,391 - DEBUG - Attempting to acquire lock 2920693384288 on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\c79f2b6a0cea6f4b564fed1938984bace9d30ff0.lock
+2025-05-05 01:13:23,392 - DEBUG - Lock 2920693384288 acquired on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\c79f2b6a0cea6f4b564fed1938984bace9d30ff0.lock
+2025-05-05 01:13:23,808 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/11" 200 350
+2025-05-05 01:13:23,820 - DEBUG - Attempting to release lock 2920693384288 on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\c79f2b6a0cea6f4b564fed1938984bace9d30ff0.lock
+2025-05-05 01:13:23,824 - DEBUG - Lock 2920693384288 released on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\c79f2b6a0cea6f4b564fed1938984bace9d30ff0.lock
+2025-05-05 01:13:24,116 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/vocab.txt HTTP/11" 200 0
+2025-05-05 01:13:24,118 - DEBUG - Attempting to acquire lock 2920693167776 on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2025-05-05 01:13:24,120 - DEBUG - Lock 2920693167776 acquired on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2025-05-05 01:13:24,415 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/vocab.txt HTTP/11" 200 231508
+2025-05-05 01:13:26,110 - DEBUG - Attempting to release lock 2920693167776 on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2025-05-05 01:13:26,111 - DEBUG - Lock 2920693167776 released on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2025-05-05 01:13:26,332 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer.json HTTP/11" 200 0
+2025-05-05 01:13:26,335 - DEBUG - Attempting to acquire lock 2920697231056 on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\cb202bfe2e3c98645018a6d12f182a434c9d3e02.lock
+2025-05-05 01:13:26,340 - DEBUG - Lock 2920697231056 acquired on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\cb202bfe2e3c98645018a6d12f182a434c9d3e02.lock
+2025-05-05 01:13:26,563 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer.json HTTP/11" 200 466247
+2025-05-05 01:13:28,325 - DEBUG - Attempting to release lock 2920697231056 on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\cb202bfe2e3c98645018a6d12f182a434c9d3e02.lock
+2025-05-05 01:13:28,326 - DEBUG - Lock 2920697231056 released on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\cb202bfe2e3c98645018a6d12f182a434c9d3e02.lock
+2025-05-05 01:13:28,557 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/added_tokens.json HTTP/11" 404 0
+2025-05-05 01:13:28,787 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/special_tokens_map.json HTTP/11" 200 0
+2025-05-05 01:13:28,789 - DEBUG - Attempting to acquire lock 2920697232448 on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+2025-05-05 01:13:28,790 - DEBUG - Lock 2920697232448 acquired on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+2025-05-05 01:13:29,196 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/special_tokens_map.json HTTP/11" 200 112
+2025-05-05 01:13:29,208 - DEBUG - Attempting to release lock 2920697232448 on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+2025-05-05 01:13:29,209 - DEBUG - Lock 2920697232448 released on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+2025-05-05 01:13:29,713 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/11" 200 6739
+2025-05-05 01:13:29,722 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-05 01:13:30,362 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling/config.json HTTP/11" 200 0
+2025-05-05 01:13:30,365 - DEBUG - Attempting to acquire lock 2920698391856 on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\d1514c3162bbe87b343f565fadc62e6c06f04f03.lock
+2025-05-05 01:13:30,367 - DEBUG - Lock 2920698391856 acquired on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\d1514c3162bbe87b343f565fadc62e6c06f04f03.lock
+2025-05-05 01:13:30,627 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling/config.json HTTP/11" 200 190
+2025-05-05 01:13:30,638 - DEBUG - Attempting to release lock 2920698391856 on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\d1514c3162bbe87b343f565fadc62e6c06f04f03.lock
+2025-05-05 01:13:30,641 - DEBUG - Lock 2920698391856 released on C:\Users\asus\.cache\huggingface\hub\.locks\models--sentence-transformers--all-MiniLM-L6-v2\d1514c3162bbe87b343f565fadc62e6c06f04f03.lock
+2025-05-05 01:13:30,879 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/11" 200 6739
+2025-05-05 01:15:13,031 - INFO - Use pytorch device_name: cpu
+2025-05-05 01:15:13,031 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-05 01:15:13,035 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-05 01:15:13,693 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:15:14,288 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/11" 200 0
+2025-05-05 01:15:14,667 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/11" 200 0
+2025-05-05 01:15:14,970 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:15:15,302 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/11" 200 0
+2025-05-05 01:15:15,568 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/11" 200 0
+2025-05-05 01:15:16,336 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2025-05-05 01:15:16,714 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/11" 200 6739
+2025-05-05 01:15:16,996 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/11" 200 6739
+2025-05-05 01:15:17,042 - INFO - Process requested: project_id=2, as_chunks=False
+2025-05-05 01:15:17,043 - INFO - project folder:G:\Git Projects\new-University-AI-Assistant\assets\Files\2
+2025-05-05 01:15:26,906 - INFO - Split into 17 chunks: G:\Git Projects\new-University-AI-Assistant\assets\Files\2\nRRyjTCKYrbl_University_Knowledge_Base.pdf
+2025-05-05 01:15:26,909 - INFO - Created DataFrame with 17 rows
+2025-05-05 01:15:26,912 - INFO - Returning 17 chunk records
+2025-05-05 01:17:24,565 - INFO - Use pytorch device_name: cpu
+2025-05-05 01:17:24,566 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-05 01:17:24,570 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-05 01:17:25,206 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:17:25,475 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/11" 200 0
+2025-05-05 01:17:25,760 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/11" 200 0
+2025-05-05 01:17:26,025 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:17:26,302 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/11" 200 0
+2025-05-05 01:17:26,565 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/11" 200 0
+2025-05-05 01:17:27,242 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2025-05-05 01:17:27,597 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/11" 200 6739
+2025-05-05 01:17:27,883 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/11" 200 6739
+2025-05-05 01:17:34,735 - INFO - Process requested: project_id=2, as_chunks=False
+2025-05-05 01:17:34,740 - INFO - project folder:G:\Git Projects\new-University-AI-Assistant\assets\Files\2
+2025-05-05 01:17:41,216 - INFO - Split into 17 chunks: G:\Git Projects\new-University-AI-Assistant\assets\Files\2\nRRyjTCKYrbl_University_Knowledge_Base.pdf
+2025-05-05 01:17:41,218 - INFO - Created DataFrame with 17 rows
+2025-05-05 01:17:41,222 - INFO - Returning 17 chunk records
+2025-05-05 01:20:02,479 - INFO - Use pytorch device_name: cpu
+2025-05-05 01:20:02,482 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-05 01:20:02,488 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-05 01:20:03,280 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:20:03,547 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/11" 200 0
+2025-05-05 01:20:03,823 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/11" 200 0
+2025-05-05 01:20:04,125 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:20:04,398 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/11" 200 0
+2025-05-05 01:20:04,691 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/11" 200 0
+2025-05-05 01:20:05,783 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2025-05-05 01:20:06,136 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/11" 200 6739
+2025-05-05 01:20:06,417 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/11" 200 6739
+2025-05-05 01:20:06,536 - INFO - Process requested: project_id=2, as_chunks=False
+2025-05-05 01:20:06,547 - INFO - project folder:G:\Git Projects\new-University-AI-Assistant\assets\Files\2
+2025-05-05 01:20:07,747 - INFO - Use pytorch device_name: cpu
+2025-05-05 01:20:07,748 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-05 01:20:08,011 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:20:08,295 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/11" 200 0
+2025-05-05 01:20:08,636 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/11" 200 0
+2025-05-05 01:20:08,910 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:20:09,190 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/11" 200 0
+2025-05-05 01:20:09,447 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/11" 200 0
+2025-05-05 01:20:09,853 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2025-05-05 01:20:10,218 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/11" 200 6739
+2025-05-05 01:20:10,540 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/11" 200 6739
+2025-05-05 01:20:15,482 - INFO - Split into 17 chunks: G:\Git Projects\new-University-AI-Assistant\assets\Files\2\nRRyjTCKYrbl_University_Knowledge_Base.pdf
+2025-05-05 01:20:15,483 - INFO - Created DataFrame with 17 rows
+2025-05-05 01:20:15,486 - INFO - Returning 17 chunk records
+2025-05-05 01:24:49,974 - INFO - Use pytorch device_name: cpu
+2025-05-05 01:24:49,974 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-05 01:24:49,978 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-05 01:24:53,237 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:24:53,547 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/11" 200 0
+2025-05-05 01:24:53,801 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/11" 200 0
+2025-05-05 01:24:54,111 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:24:54,490 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/11" 200 0
+2025-05-05 01:24:54,822 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/11" 200 0
+2025-05-05 01:24:55,548 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2025-05-05 01:24:56,480 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/11" 200 6739
+2025-05-05 01:24:56,769 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/11" 200 6739
+2025-05-05 01:32:12,284 - INFO - Use pytorch device_name: cpu
+2025-05-05 01:32:12,284 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-05 01:32:12,288 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-05 01:32:12,987 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:32:13,269 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/11" 200 0
+2025-05-05 01:32:13,542 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/11" 200 0
+2025-05-05 01:32:13,815 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:32:14,148 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/11" 200 0
+2025-05-05 01:32:14,487 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/11" 200 0
+2025-05-05 01:32:15,335 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2025-05-05 01:32:15,706 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/11" 200 6739
+2025-05-05 01:32:16,122 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/11" 200 6739
+2025-05-05 01:32:34,177 - INFO - Use pytorch device_name: cpu
+2025-05-05 01:32:34,177 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-05 01:32:34,181 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-05 01:32:37,342 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:32:37,788 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/11" 200 0
+2025-05-05 01:32:38,102 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/11" 200 0
+2025-05-05 01:32:38,370 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:32:38,654 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/11" 200 0
+2025-05-05 01:32:38,948 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/11" 200 0
+2025-05-05 01:32:39,744 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2025-05-05 01:32:40,105 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/11" 200 6739
+2025-05-05 01:32:40,980 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/11" 200 6739
+2025-05-05 01:32:41,033 - INFO - Use pytorch device_name: cpu
+2025-05-05 01:32:41,034 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-05 01:32:41,310 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:32:41,601 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/11" 200 0
+2025-05-05 01:32:41,884 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/11" 200 0
+2025-05-05 01:32:42,250 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:32:42,519 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/11" 200 0
+2025-05-05 01:32:42,788 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/11" 200 0
+2025-05-05 01:32:43,111 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2025-05-05 01:32:43,511 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/11" 200 6739
+2025-05-05 01:32:43,854 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/11" 200 6739
+2025-05-05 01:32:54,684 - INFO - Use pytorch device_name: cpu
+2025-05-05 01:32:54,685 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-05 01:32:54,689 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-05 01:32:55,183 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:32:55,439 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/11" 200 0
+2025-05-05 01:32:55,697 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/11" 200 0
+2025-05-05 01:32:55,966 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:32:56,285 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/11" 200 0
+2025-05-05 01:32:56,638 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/11" 200 0
+2025-05-05 01:32:57,438 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2025-05-05 01:32:57,804 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/11" 200 6739
+2025-05-05 01:32:58,406 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/11" 200 6739
+2025-05-05 01:32:58,440 - INFO - Use pytorch device_name: cpu
+2025-05-05 01:32:58,441 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-05 01:32:58,776 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:32:59,049 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/11" 200 0
+2025-05-05 01:32:59,300 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/11" 200 0
+2025-05-05 01:32:59,577 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:32:59,840 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/11" 200 0
+2025-05-05 01:33:00,106 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/11" 200 0
+2025-05-05 01:33:00,414 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2025-05-05 01:33:00,768 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/11" 200 6739
+2025-05-05 01:33:01,043 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/11" 200 6739
+2025-05-05 01:33:15,915 - INFO - Use pytorch device_name: cpu
+2025-05-05 01:33:15,915 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-05 01:33:15,919 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-05 01:33:16,637 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:33:16,978 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/11" 200 0
+2025-05-05 01:33:17,293 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/11" 200 0
+2025-05-05 01:33:17,566 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:33:17,952 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/11" 200 0
+2025-05-05 01:33:18,232 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/11" 200 0
+2025-05-05 01:33:18,942 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2025-05-05 01:33:19,291 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/11" 200 6739
+2025-05-05 01:33:19,577 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/11" 200 6739
+2025-05-05 01:33:19,618 - INFO - Use pytorch device_name: cpu
+2025-05-05 01:33:19,619 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-05 01:33:20,130 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:33:20,464 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/11" 200 0
+2025-05-05 01:33:20,731 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/11" 200 0
+2025-05-05 01:33:21,052 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:33:21,319 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/11" 200 0
+2025-05-05 01:33:21,603 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/11" 200 0
+2025-05-05 01:33:21,959 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2025-05-05 01:33:22,300 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/11" 200 6739
+2025-05-05 01:33:22,582 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/11" 200 6739
+2025-05-05 01:35:55,722 - INFO - Query received - Project: 2, Question: How do I register for courses?...
+2025-05-05 01:35:55,930 - INFO - Returning 3 relevant chunks
+2025-05-05 01:36:53,038 - INFO - Query received - Project: 2, Question: How do I register for courses?...
+2025-05-05 01:36:53,070 - INFO - Returning 1 relevant chunks
+2025-05-05 01:55:30,207 - INFO - Use pytorch device_name: cpu
+2025-05-05 01:55:30,208 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-05 01:55:30,214 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-05 01:55:30,811 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:55:31,081 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/11" 200 0
+2025-05-05 01:55:31,342 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/11" 200 0
+2025-05-05 01:55:31,714 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:55:31,988 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/11" 200 0
+2025-05-05 01:55:32,298 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/11" 200 0
+2025-05-05 01:55:33,031 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2025-05-05 01:55:33,407 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/11" 200 6739
+2025-05-05 01:55:33,685 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/11" 200 6739
+2025-05-05 01:55:33,716 - INFO - Use pytorch device_name: cpu
+2025-05-05 01:55:33,717 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-05 01:55:34,004 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:55:34,279 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/11" 200 0
+2025-05-05 01:55:34,532 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/11" 200 0
+2025-05-05 01:55:34,895 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 01:55:35,292 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/11" 200 0
+2025-05-05 01:55:35,587 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/11" 200 0
+2025-05-05 01:55:35,923 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2025-05-05 01:55:36,249 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/11" 200 6739
+2025-05-05 01:55:36,521 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/11" 200 6739
+2025-05-05 02:04:30,167 - INFO - Use pytorch device_name: cpu
+2025-05-05 02:04:30,167 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-05 02:04:30,171 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-05 02:04:30,826 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 02:04:31,104 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/11" 200 0
+2025-05-05 02:04:31,375 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/11" 200 0
+2025-05-05 02:04:31,644 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-05 02:04:31,915 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/11" 200 0
+2025-05-05 02:04:32,188 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/11" 200 0
+2025-05-05 02:04:32,996 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2025-05-05 02:04:33,387 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/11" 200 6739
+2025-05-05 02:04:34,430 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/11" 200 6739
